@@ -1,0 +1,30 @@
+[
+  {
+    "group": "Languages",
+    "items": ["TypeScript", "JavaScript", "Python", "SQL", "Java", "HTML/CSS"]
+  },
+  {
+    "group": "Frameworks & Libraries",
+    "items": ["Next.js", "Express.js", "React", "FastAPI", "Tailwind CSS"]
+  },
+  {
+    "group": "Tools",
+    "items": [
+      "Git",
+      "GitHub",
+      "VS Code",
+      "Wireshark",
+      "MongoDB Atlas",
+      "Linux",
+      "VMs",
+      "SSH",
+      "NPM",
+      "Google Cloud Platform",
+      "Apache"
+    ]
+  },
+  {
+    "group": "Concepts",
+    "items": ["Responsive design", "REST APIs", "WebSockets", "Technical writing", "Cloud basics"]
+  }
+]

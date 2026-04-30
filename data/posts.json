@@ -1,0 +1,21 @@
+[
+  {
+    "slug": "linkedin",
+    "title": "LinkedIn: Microslop's Latest Failure",
+    "description": "LinkedIn used to have standards. Now, it's worse than FaceBook.",
+    "publishedAt": "20 Apr 2026",
+    "content": [
+      "LinkedIn used to be a place where professional, competent people came to collaborate, network, and ultimately get things done. Then, all the social media influencer-types found out about it. Nowadays you'd be lucky to find anything of value in the sea of humblebragging, toxic positivity, and useless political projections.",
+      "For those job-hunting, LinkedIn seems like a logical choice. Unfortunately, everyone else has the same idea. With easy apply, you can send over your application and resume with a few button clicks; it's so easy that everyone can do it. And they do."
+    ]
+  },
+  {
+    "slug": "insider-trading",
+    "title": "Iran War and Insider Trading",
+    "description": "Anonymous trader makes $90,000,000 in less then an hour trading oil futures",
+    "publishedAt": "18 Apr 2026",
+    "content": [
+      "About 20 minutes before the Strait of Hormuz was announced as reopened, about $760,000,000 worth of Brent crude futures were sold. The trader likely made between $80,000,000 and $90,000,000 based off this single trade. This follows a common trend in this War, where perfectly timed trades are executed shortly before the announcement of market-altering news. On 07 Apr, a $950,000,000 bet was placed hours before the initial two-week ceasefire was announced. On 23 Mar, a $500,000,000 bet was placed 15 minutes before Trump announced a delay in strikes on Iranian energy facilities."
+    ]
+  }
+]

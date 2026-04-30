@@ -1,0 +1,199 @@
+[
+  {
+    "slug": "e-habitat",
+    "eyebrow": "Project",
+    "title": "E-Habitat",
+    "summary": "A distributed systems dashboard for monitoring temperature, humidity, airflow, and anomaly events across virtual server-room nodes.",
+    "description": "A monitoring and simulation interface for a distributed server-room environment with telemetry, control inputs, and anomaly injection.",
+    "stack": ["Next.js", "React", "TypeScript", "FastAPI", "WebSockets"],
+    "sections": [
+      {
+        "detailLayout": "text",
+        "title": "Overview",
+        "content": "E-Habitat is an interactive simulation platform that models server-room conditions across multiple virtual nodes. The interface presents telemetry, anomaly states, and controls in a manner that is readable, responsive, and useful for demonstrating distributed monitoring concepts."
+      },
+      {
+        "detailLayout": "list",
+        "title": "Technologies",
+        "items": [
+          "Next.js - Handles routing and page structure",
+          "React - Building reusable UI components and live dashboard viewing",
+          "TypeScript - Safer telemetry and state handling, cleaner component props",
+          "FastAPI - Backend endpoints and simulation control APIs",
+          "WebSockets - Realtime telemetry updates without constant polling"
+        ]
+      },
+      {
+        "detailLayout": "cards",
+        "items": [
+          {
+            "title": "Goal",
+            "content": "Present changing environmental conditions across multiple virtual nodes in a readable, streamlined manner."
+          },
+          {
+            "title": "Role",
+            "content": "Frontend development, UI design, FastAPI/WebSocket integration"
+          },
+          {
+            "title": "Features",
+            "content": "Anomaly injection, manual controls, anomaly history, individual user profiles, real-time monitoring, detailed telemetry"
+          },
+          {
+            "title": "Result",
+            "content": "All core features implemented; effectively demonstrates centralized vs edge-based monitoring."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "security-lab",
+    "eyebrow": "Project",
+    "title": "Network Security Lab",
+    "summary": "Lab focused on building, testing, and securing a connection between client and server using SSL.",
+    "description": "Secure network connections between a client and server using an SSL client and SSL (single-threaded) server with variable encryption configurations.",
+    "stack": ["Python", "Wireshark", "OpenSSL", "Linux"],
+    "sections": [
+      {
+        "detailLayout": "text",
+        "title": "Overview",
+        "content": "The lab involved building a connection between a client and server using network programming, then securing that connection with different encryption algorithms. Wireshark was used to capture and analyze the network traffic."
+      },
+      {
+        "detailLayout": "list",
+        "title": "Technologies",
+        "items": [
+          "Python - Used to run and test the client-server connection ",
+          "Wireshark - Used to capture and analyze packets",
+          "OpenSSL - Generated certificates and keys to support TLS configurations",
+          "Linux - Working environment for the project"
+        ]
+      },
+      {
+        "detailLayout": "cards",
+        "items": [
+          {
+            "title": "Goal",
+            "content": "Write client and server code using socket network programming, securing that connection using SSL, testing at least two different encryption configurations"
+          },
+          {
+            "title": "Role",
+            "content": "End-to-end development. Solo implementation of network connection, encryption configurations, and analysis of packet capture."
+          },
+          {
+            "title": "Features",
+            "content": "Client-server connection secured with RSA/AES, RSA/ChaCha20 encryption configurations"
+          },
+          {
+            "title": "Result",
+            "content": "Successfully protected the confidentiality and integrity of data-in-transit. Data was successfully decrypted with no problems."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "portfolio",
+    "eyebrow": "Project",
+    "title": "Portfolio Website",
+    "summary": "A personal portfolio site focused on clear communication, academic work, and project visualization.",
+    "description": "A portfolio website that present my relevant work experience, education, and skills in a streamlined, professional manner.",
+    "stack": ["Next.js", "Tailwind CSS", "TypeScript", "React", "MongoDB"],
+    "sections": [
+      {
+        "detailLayout": "text",
+        "title": "Overview",
+        "content": "A portfolio website designed with information accessibility and simplicity in mind. Showcases resume information using a maintainable component-based architecture."
+      },
+      {
+        "detailLayout": "list",
+        "title": "Key Libraries",
+        "items": [
+          "React Hook Form - Manages contact form state and submission handling",
+          "Zod - Contact form validation to enforce safe data handling",
+          "Framer Motion - Adds animations for visual flare",
+          "React Icons - Used for consistent iconography",
+          "MongoDB - Database to store contact form submissions"
+        ]
+      },
+      {
+        "detailLayout": "cards",
+        "items": [
+          {
+            "title": "Goal",
+            "content": "Create a personal portfolio for work history and experience. Meet all project requirements as directed."
+          },
+          {
+            "title": "Role",
+            "content": "End-to-end development. Frontend with database integration."
+          },
+          {
+            "title": "Features",
+            "content": "Responsive design, dynamic routing, JSON data-driven, contact form supported by database, resume integration"
+          },
+          {
+            "title": "Result",
+            "content": "All project requirements met. Intentionally basic and conservative design for the sake of simplicity."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "cs-marketplace",
+    "eyebrow": "Project",
+    "title": "CS Marketplace",
+    "summary": "An all-inclusive community hub for those in the computer science field. Users are able to login, plan events, and chat in real-time.",
+    "description": "CS Marketplace is a website that facilitates a centralized location for users to plan events and chat with others, all supported by a fully-featured login system with defined user roles.",
+    "stack": [
+      "JavaScript",
+      "HTML/CSS",
+      "MySQL",
+      "Google Cloud Platform",
+      "Express,js",
+      "bcrypt",
+      "Firebase"
+    ],
+    "sections": [
+      {
+        "detailLayout": "text",
+        "title": "Overview",
+        "content": "CS Marketplace is a community hub that allows users to create events on an interactive calendar, chat with other users, and login to view tracked event data. Admin users have the ability to restrict users, modify event data, and edit sensitive information. A server-hosted database stores events data and user login information."
+      },
+      {
+        "detailLayout": "list",
+        "title": "Key Technologies",
+        "items": [
+          "JavaScript - Handles client-facing interface and backend logic",
+          "HTML/CSS - Build the structure and presentation of web pages",
+          "Express.js - Manages routing, server-side logic, application flow",
+          "bcrypt - Hashes passwords using industry-standard encryption for secure password storage",
+          "MySQL - Used for database to store key events and user login information",
+          "Google Cloud Platform - Hosted VM used to support MySQL server",
+          "Firebase - Used to support chat functionality via widgets"
+        ]
+      },
+      {
+        "detailLayout": "cards",
+        "items": [
+          {
+            "title": "Goal",
+            "content": "Build a full-featured web application that allows users to login, organize events, chat with others, and view information on an interactive calendar."
+          },
+          {
+            "title": "Role",
+            "content": "Full stack development. Built events page and adding/deleting/modifying events functionality, assisted in database construction"
+          },
+          {
+            "title": "Features",
+            "content": "Events planning, interactive calendar, user login and authentication, defined user-roles (admin, group admin, user)"
+          },
+          {
+            "title": "Result",
+            "content": "All core project features implemented, user login with persistent sessions and secure password hashing"
+          }
+        ]
+      }
+    ]
+  }
+]

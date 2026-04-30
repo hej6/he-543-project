@@ -1,35 +1,44 @@
-import Intro from "@/components/intro";
-import Link from 'next/link';
+import Hero from "@/components/hero";
+import ProjectCard from "@/components/project-card";
+import SectionTitle from "@/components/section-title";
+import projects from "@/data/projects.json";
 
-async function getPosts() {
-  const response = await fetch('https://jsonplaceholder.typicode.com/posts/1/comments');
-  const data = await response.json();
-  return data;
-}
+type Project = {
+  slug: string;
+  eyebrow: string;
+  title: string;
+  summary: string;
+  description: string;
+  stack: string[];
+  sections: {
+    title: string;
+    content?: string;
+    items?: string[];
+  }[];
+};
 
-const Home: React.FC = async() => {
-  const posts = await getPosts();
+export default function HomePage() {
+  const featuredProjects = projects as Project[];
 
   return (
-    <div className="flex flex-col gap-5">
-      <section className="bg-amber-300 p-8 rounded-lg">
-        <Intro />
+    <div className="space-y-8">
+      <Hero />
 
-        <ul className="list-disc pl-5 my-3">
-        {posts.map((post: { id: number; name: string; }) => (
-          <li key={post.id} className="mb-2">
-            <Link className="text-white hover:underline" href={`/projects/${post.id}`}>{post.name}</Link>
-          </li>
-        ))}
-         
-       </ul>
-      </section>
+      <section className="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm dark:border-slate-800 dark:bg-slate-950 pt-1 md:pt-1">
+        <SectionTitle title="Featured Projects" />
 
-      <section className="bg-amber-300 p-8 rounded-lg">
-        <Intro />
+        <div className="mt-4 grid gap-5 md:grid-cols-2">
+          {featuredProjects.map((project) => (
+            <ProjectCard
+              key={project.slug}
+              title={project.title}
+              summary={project.summary}
+              stack={project.stack}
+              href={`/projects/${project.slug}`}
+            />
+          ))}
+        </div>
       </section>
     </div>
   );
 }
-
-export default Home;

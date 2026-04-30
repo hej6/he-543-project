@@ -1,84 +1,31 @@
-"use client";
-import React from "react";
-import { FaFlagUsa } from "react-icons/fa6";
 import Link from "next/link";
+import { navLinks } from "@/lib/site";
 
-const Header: React.FC = () => {
+export default function Header() {
   return (
-    <header className="bg-fuchsia-700 p-4 flex items-center justify-between rounded">
-      
-      {/* Icon and header container */}
-      <div className="flex items-center gap-4">
-        
-        {/* Icon container */}
-        <div className="bg-pink-400 w-24 h-16 flex items-center justify-center rounded">
-          <FaFlagUsa className="text-white text-5xl"/>
+    <header className="rounded-3xl border border-slate-200 bg-white px-5 py-4 shadow-sm dark:border-slate-800 dark:bg-slate-950">
+      <div className="flex flex-col gap-4 lg:flex-row lg:items-center lg:justify-between">
+        <div>
+          <Link
+            href="/"
+            className="text-2xl font-bold tracking-tight text-slate-900 dark:text-white"
+          >
+            Jared He
+          </Link>
+          <p className="text-sm text-slate-600 dark:text-slate-300">Full-Stack Web Developer</p>
         </div>
-
-        {/* Header container */}
-        <div className="bg-pink-400 h-16 px-10 flex items-center justify-center rounded">
-          <span className="text-white text-2xl font-semibold">
-            To-Do App
-          </span>
-        </div>
-
+        <nav className="flex flex-wrap gap-2">
+          {navLinks.map((link) => (
+            <Link
+              key={link.href}
+              href={link.href}
+              className="rounded-full border border-slate-300 px-4 py-2 text-sm font-medium text-slate-700 transition hover:border-sky-500 hover:text-sky-600 dark:border-slate-700 dark:text-slate-200"
+            >
+              {link.label}
+            </Link>
+          ))}
+        </nav>
       </div>
-
-      {/* Nav container, 3 nav items */}
-      <nav className="bg-pink-400 p-3 flex items-center gap-3 rounded">
-        
-        {/* Nav Label */}
-        <span className="text-white font-semibold mr-2">
-          Navigation
-        </span>
-
-        {/* Nav Items */}
-        <a
-        href="/"
-        className="
-            bg-purple-800 text-white px-6 py-3 rounded
-            shadow-md
-            hover:bg-purple-700
-            active:scale-90
-            active:shadow-inner
-            transition
-        "
-        >
-        Home
-        </a>
-
-        <a
-        href="/about"
-        className="
-            bg-purple-800 text-white px-6 py-3 rounded
-            shadow-md
-            hover:bg-purple-700
-            active:scale-90
-            active:shadow-inner
-            transition
-        "
-        >
-        About
-        </a>
-
-        <a
-        href="#"
-        className="
-            bg-purple-800 text-white px-6 py-3 rounded
-            shadow-md
-            hover:bg-purple-700
-            active:scale-90
-            active:shadow-inner
-            transition
-        "
-        >
-        Contact
-        </a>
-
-      </nav>
-
     </header>
   );
-};
-
-export default Header;
+}

@@ -1,0 +1,50 @@
+[
+  {
+    "title": "Configuration Analyst Intern",
+    "organization": "Yale Information Technology Services",
+    "period": "Jun 2026 - Aug 2026",
+    "summary": "Provide analysis of AI features and their potential integration with Yale's ServiceNow platform.",
+    "highlights": [
+      "Configuration and maintenence of ServiceNow forms, fields, workflows, and catalog items",
+      "Building and updating low-code/no-code features",
+      "Quality Assurance and comprehensive testing of new features and configurations before release",
+      "Provide assistance in incident, request, and ticket workflow improvements",
+      "Documentation of key configurations, processes, and support procedures to mantain operational tempo"
+    ],
+    "stack": ["ServiceNow", "JavaScript", "Flow Designer", "Now Assist", "CMDB"]
+  },
+  {
+    "title": "Facilities Support",
+    "organization": "Sodexo",
+    "period": "Sept 2023 - Present",
+    "summary": "Provide facilities support in customer-facing service and janitorial roles.",
+    "highlights": [
+      "Fulfill variable customer demands and special requests",
+      "Provide satisfactory level of service regardless of customer difficulty",
+      "Mantain cleanliness of all mission-critical surfaces",
+      "Enforce hygenic standards in operational environment as well as customer-facing areas",
+      "Disposal of waste products according to established industry standards"
+    ],
+    "stack": [
+      "EcoLab Sanitizing Wash 'n Walk",
+      "EcoLab Sink & Surface Sanitizer",
+      "EcoLab GreaseLift",
+      "Rubbermaid WaveBrake",
+      "Dawn Ultra Dish Soap"
+    ]
+  },
+  {
+    "title": "Infantryman",
+    "organization": "United States Military",
+    "period": "Apr 2019 - Apr 2025",
+    "summary": "Complete mission objectives using established infantry doctorine.",
+    "highlights": [
+      "Mantain composure in suboptimal operating conditions",
+      "Secure objectives according to highly variable leadership directives",
+      "Unit cohesion in hostile environments with leadership of questionable competence",
+      "Mantain proficiency according to qualification standards with all issued weapon systems",
+      "Effective engagement, suppression, and destruction of hostile forces"
+    ],
+    "stack": ["M17", "M4A1", "M249 SAW", "M240B", "M320A1", "M2HB", "MK19"]
+  }
+]

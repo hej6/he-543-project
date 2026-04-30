@@ -1,14 +1,12 @@
 "use client";
-import React from "react";
-import { FaCircleChevronRight } from "react-icons/fa6";
-import Button from "@mui/material/Button";
 
-const ButtonUI: React.FC = () => {
-    return (
-        <div>
-            <Button variant="contained"> Submit <FaCircleChevronRight /> </Button>
-        </div>
-    );
-};
-
-export default ButtonUI;
+export default function ButtonUI() {
+  return (
+    <button
+      type="button"
+      className="rounded-2xl bg-sky-600 px-4 py-2 text-sm font-semibold text-white"
+    >
+      Sample button
+    </button>
+  );
+}
